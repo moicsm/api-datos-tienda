@@ -1,0 +1,17 @@
+{
+  "tienda": "Universal Textil",
+  "caja": {
+    "id": "DESKTOP-G24OGKR_192-168-0-119",
+    "nombrePC": "DESKTOP-G24OGKR",
+    "ip": "192.168.0.119"
+  },
+  "ultimaSincronizacion": "2026-05-19T21:40:21.775Z",
+  "resumen": {
+    "totalClientes": 1,
+    "totalProductos": 6,
+    "ventasTotalesHistoricas": 5,
+    "ingresosTotalesHistoricos": 2130,
+    "ventasDelMes": 3,
+    "ingresosDelMes": 1630
+  }
+}
