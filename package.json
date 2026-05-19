@@ -1,13 +1,18 @@
 {
   "name": "api-datos-tienda",
   "version": "1.0.0",
-  "description": "API Backend en tiempo real para el sistema administrativo",
-  "main": "server.js",
+  "description": "API REST robusta, modular y en capas para el sistema administrativo",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
