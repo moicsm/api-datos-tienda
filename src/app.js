@@ -14,6 +14,9 @@ app.use(requestLogger);
 // Montar Enrutador REST API
 app.use('/api', routes);
 
+// Ruta Raíz (Salud del servidor para bots y monitor de Render)
+app.get('/', (req, res) => res.status(200).send('API de Datos de Tienda está ONLINE 🚀'));
+
 // Middleware para rutas no encontradas (404)
 app.use((req, res, next) => {
   const err = new Error(`Ruta ${req.originalUrl} no encontrada`);
