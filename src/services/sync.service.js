@@ -2,7 +2,7 @@ const cacheService = require('./cache.service');
 
 class SyncService {
   async processSync(payload) {
-    const { cajaId, hostnamePC, ipLocal, productos, ventas, clientes, movimientos, dashboard } = payload;
+    const { cajaId, hostnamePC, ipLocal, productos, ventas, clientes, movimientos, proveedores, facturas, dashboard } = payload;
 
     if (!cajaId) {
       throw new Error('Falta el parámetro crítico: cajaId');
@@ -17,6 +17,8 @@ class SyncService {
       ventas: ventas || [],
       clientes: clientes || [],
       movimientos: movimientos || [],
+      proveedores: proveedores || [],
+      facturas: facturas || [],
       dashboard: dashboard || {}
     };
 
